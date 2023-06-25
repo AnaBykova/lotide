@@ -18,7 +18,7 @@ Therefore countLetters("lighthouse in the house") would return:
   n: 1,
 }
 
-We can skip and not count spaces.
+We can skip and not count spaces. - I am count
 Use for...of loops with strings
 */
 
@@ -32,9 +32,9 @@ const countLetters = function(allLetters) {
       // If the item doesn't exist in results, initialize its count to 1
       results[letter] = 1;
     }
-    console.log(letter, results[letter]);
+    //console.log(letter, results[letter]);
   }
-  console.log(results);
+  //console.log(results);
   return results;
 };
 
