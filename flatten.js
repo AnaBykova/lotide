@@ -58,3 +58,5 @@ const arraySample = [1, 2, [3, 4], 5, [6]];
 
 assertArraysEqual(arraySample, [ 1, 2, 3, 4, 5, 6]);
 assertArraysEqual(flatten(arraySample), [ 1, 2, 3, 4, 5, 6]);
+
+module.exports = flatten;

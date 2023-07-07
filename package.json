@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@anabykova/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "anabykovaLotide",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/AnaBykova/lotide.git"
   },
-  "author": "",
+  "author": "anabykova",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnaBykova/lotide/issues"

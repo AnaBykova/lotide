@@ -79,3 +79,5 @@ assertArraysEqual(results1, [ 1, 2, 5, 7, 2]); // Passes
 assertArraysEqual(results1, [ 1, 2, 5, 7]); // Fails
 assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood']); // Passes
 assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywoo']); // Fails
+
+module.exports = takeUntil;

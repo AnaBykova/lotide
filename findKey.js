@@ -67,3 +67,5 @@ assertArraysEqual(findKey(objectTest1, x => x.stars === 2), 'noma'); // Passes
 assertArraysEqual(findKey(objectTest1, x => x.stars === 1), 'Blue Hill'); // Passes
 assertArraysEqual(findKey(objectTest1, x => x.stars === 3), 'Akelarre'); // Fails
 assertArraysEqual(findKey(objectTest1, x => x.stars === 2), 'elBulli'); // Fails
+
+module.exports = findKey;

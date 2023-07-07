@@ -90,3 +90,5 @@ const test = {
 assertObjectEqual(letterPositions(firstSentence), test);
 assertObjectEqual(letterPositions(secondSentence), {A: [ 0, 2 ], N: [ 1 ]});
 assertObjectEqual(letterPositions(thirdSentence), {h: 1, o: 1, u: 1, l: 2, d: 1, ' ': 2, b: 1, e: 2, f: 1, a: 1});
+
+module.exports = letterPositions;

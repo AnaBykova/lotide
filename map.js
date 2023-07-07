@@ -53,4 +53,4 @@ assertArraysEqual(results1, ['g', 'c', 't', 'm']); // Fails
 assertArraysEqual(results2, ['a', 'b', 'c', 'd']); // Passes
 assertArraysEqual(results2, ['g', 'c', 't', 'm']); // Fails
 
-
+module.exports = map;

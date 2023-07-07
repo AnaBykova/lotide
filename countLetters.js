@@ -70,3 +70,4 @@ assertObjectEqual(countLetters(firstSentence), {l: 1, i: 2, g: 1, h: 4, t: 2, o:
 assertObjectEqual(countLetters(secondSentence), {A: 2, N: 1});
 assertObjectEqual(countLetters(thirdSentence), {h: 1, o: 1, u: 1, l: 2, d: 1, ' ': 2, b: 1, e: 2, f: 1, a: 1});
 
+module.exports = countLetters;
