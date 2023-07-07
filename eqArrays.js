@@ -7,13 +7,15 @@
   }
 }*/
 
-function assertEqual(actual, expected) {
+/*function assertEqual(actual, expected) {
   if (actual === expected) {
     console.log(`\u2705 Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`\u274C Assertion Failed: ${actual} !== ${expected}`);
   }
-}
+}*/
+
+const assertEqual = require('./assertEqual');
 
 function eqArrays(array1, array2) {
   if (array1.length !== array2.length) {
@@ -29,9 +31,13 @@ function eqArrays(array1, array2) {
   return true;
 }
 
+/*
 // Test cases
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3", "4"]), true);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);
+*/
+
+module.exports = eqArrays;
