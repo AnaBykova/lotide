@@ -14,14 +14,20 @@ Use assertArraysEqual and eqArrays functions
 */
 
 const flatten = function(array) {
-  const flattenedArray = [];
+  let flattenedArray = [];
+  
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
-      flattenedArray.push(...array[i]);
+      // If the element is an array, recursively flatten it and concatenate the result
+      flattenedArray = flattenedArray.concat(flatten(array[i]));
     } else {
+      // If the element is not an array, simply add it to the flattened array
       flattenedArray.push(array[i]);
     }
   }
+
+  return flattenedArray;
+
   return flattenedArray;
 };
 
