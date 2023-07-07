@@ -10,6 +10,8 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
+module.exports = assertArraysEqual;
+
 /*const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -29,5 +31,5 @@ assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // Passes
 assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // Fails
 */
 
-module.exports = assertArraysEqual;
+
 
