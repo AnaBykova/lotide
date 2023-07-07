@@ -21,23 +21,8 @@ to begin with.
 Due to the copy/pasted assertion functions, your test code will indeed take up a big chunk of the file.
 The flow of it should look like this:
 
-// TEST/ASSERTION FUNCTIONS
-const eqArrays = function(...) {
-  //...
-}
-
-const assertArraysEqual = function(actual, expected) {
-  //...
-}
-
-// ACTUAL FUNCTION
-const middle = function(array) {
-  //...
-}
-
-// TEST CODE
-// ...
 */
+
 
 const middle = function(array) {
   //const length = array.length;
@@ -52,6 +37,7 @@ const middle = function(array) {
   }
 };
 
+/*
 const assertArraysEqual = function(array1, array2) {
   //console.log(array1 + " " + array2);
   if (eqArrays(array1, array2)) {
@@ -71,11 +57,14 @@ const eqArrays = function(array1, array2) {
     }
   }
   return true;
-};
+};*/
 
-const arraySample = [21, 2, 103, 14, 5, 66];
-console.log(arraySample);
-console.log(middle(arraySample));
+//const arraySample = [21, 2, 103, 14, 5, 66];
+//console.log(arraySample);
+//console.log(middle(arraySample));
+//console.log(middle([21, 2, 103, 14, 5, 66]));
 
-assertArraysEqual(arraySample, [ 1, 2, 3, 4, 5, 6]);
-assertArraysEqual(middle(arraySample), [ 103, 14]);
+/*assertArraysEqual(middle([21, 2, 103, 14, 5, 66]), [ 1, 2, 3, 4, 5, 6]);
+assertArraysEqual(middle([21, 2, 103, 14, 5, 66]), [ 103, 14]);*/
+
+module.exports = middle;
